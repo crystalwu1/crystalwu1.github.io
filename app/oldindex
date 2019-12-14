@@ -1,0 +1,176 @@
+<html>
+<head>
+    <title> Crystal Wu </title>
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../style/shared.css">
+    <link rel="shortcut icon" type="image/png" href="little4.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="main">
+<!-- overlays ----------------------------------------------------------------->
+<!-- <div id="navbarr" class="sidenav">
+  <a href="#home" style="padding:50 0 50 0;"> <img src= "personal logo.png" height="auto" width="90%" style="margin-left:5%; margin-top:20%;" > </a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#about" onclick="closeNav()" style="margin-top: 20%;">about</a>
+  <a href="#projects" onclick="closeNav()">projects</a>
+  <a href="#art" onclick="closeNav()">ART</a>
+  <a href = "resume.pdf" target="_blank">resume</a>
+</div> -->
+<div id="opener" class="open-wrapper">
+        <p> hello </p>
+        <img height="50px" width="auto" style="cursor:pointer" src="nav.svg" onclick="openNav()">
+    </div>
+<div id="icons" class="open-wrapper" style="position: relative; float: right;">
+    <a href="mailto:cw683@cornell.edu" target="_blank" style="position:fixed; top: 70%;"> <img width="50px" src="mail.svg"> </a>
+    <br><br><br>
+    <a href="https://www.linkedin.com/in/crystal-wu-cw683/" target="_blank" style="position:fixed; top:80%;"> <img width="50px" src="link.svg"> </a>
+    <br><br><br>
+    <a href="https://www.instagram.com/wuwuhoo/" target="_blank" style="position: fixed; top: 90%;"> <img width="50px" src="insta.svg"> </a>
+</div>
+
+<!-- home page ---------------------------------------------------------------->
+<div id="name" class="title" style="background-image: url('Hea.svg');">
+    <div id="home"  class="header-wrapper">
+        <div class="header">
+            <h1 style="color:#F4F4F4;">CRYSTAL <span style="color:#F3E7C7">WU</span></h1>
+            <!-- <h2>cornell university '22</h2> -->
+        </div>
+    </div>
+</div>
+
+
+
+<!-- projects ----------------------------------------------------------------->
+<div id="projects" class="heading" style="background-color: #34626C; height:300px;">
+    <div class="basiccontain" style="top:50%;">
+        <h3> <span style="color: #F3E7C7;"> PROJECTS </span><span style="color: #F4F4F4;"> + </span> <br><br> <span style="color: #FFAA5B;"> EXPERIENCE </span> </h3>
+    </div>
+</div>
+<div id="CUSAIL" class="basiccontain">
+    <div class = "flex">
+        <div id="blurb" class="picture">
+           <img src="cusail.jpg">
+        </div>
+       <div class="text">
+          <h4> <span style="color: #000000; text-align: right;"> BUSINESS SUBTEAM LEAD </h4>
+          <h4> <b> <span style="color: #34626C; text-align: right;"> CUSAIL </h4></b>
+          <p> Cornell Autonomous Sailboat Team (CUSail) is an engineering project team that designs, builds, and manufactures a boat capable of autonomous navigation.</p>
+          <p> As Business Subteam Lead, I am in charge of all administrative tasks, branding, and corporate and public relations for CUSail. During my time on the team, I have worked on the team's logos, sponsorship information packet, and various other media.</p> <br>
+          <a class="button" href="https://cusail.engineering.cornell.edu/index.html" target="_blank"> Visit Website </a>
+          <a class="button" href="sponsorship_packet.pdf" target="_blank"> View Sponsorship Packet </a>
+          <a class="button" href="https://www.youtube.com/channel/UCYLMLKmgTJUMDos3ekQzPNg" target="_blank"> Watch Promotional Videos </a>
+       </div>
+   </div>
+</div>
+<div id="PRYDE" class="basiccontain" style="background-color: #F3E7C7;">
+    <div class = "flex">
+        <div id="blurb" class="picture">
+           <img src="cusail.jpg">
+        </div>
+       <div class="text">
+          <h4> <span style="color: #000000; text-align: right;"> UX DESIGNER </h4>
+          <h4> <b> <span style="color: #34626C; text-align: right;"> PRYDE </h4></b>
+          <p> Cornell Autonomous Sailboat Team (CUSail) is an engineering project team that designs, builds, and manufactures a boat capable of autonomous navigation.</p>
+          <p> As Business Subteam Lead, I am in charge of all administrative tasks, branding, and corporate and public relations for CUSail. During my time on the team, I have worked on the team's logos, sponsorship information packet, and various other media.</p> <br>
+          <a class="button" href="https://cusail.engineering.cornell.edu/index.html" target="_blank"> Visit Website </a>
+          <a class="button" href="sponsorship_packet.pdf" target="_blank"> View Sponsorship Packet </a>
+          <a class="button" href="https://www.youtube.com/channel/UCYLMLKmgTJUMDos3ekQzPNg" target="_blank"> Watch Promotional Videos </a>
+       </div>
+   </div>
+</div>
+<div id="IEEE" class="basiccontain">
+    <div class = "flex">
+        <div id="blurb" class="picture">
+           <img src="cusail.jpg">
+        </div>
+       <div class="text">
+          <h4> <span style="color: #000000; text-align: right;"> Publicity Director </h4>
+          <h4> <b> <span style="color: #34626C; text-align: right;"> CORNELL IEEE </h4></b>
+          <p> Cornell Autonomous Sailboat Team (CUSail) is an engineering project team that designs, builds, and manufactures a boat capable of autonomous navigation.</p>
+          <p> As Business Subteam Lead, I am in charge of all administrative tasks, branding, and corporate and public relations for CUSail. During my time on the team, I have worked on the team's logos, sponsorship information packet, and various other media.</p> <br>
+          <a class="button" href="https://cusail.engineering.cornell.edu/index.html" target="_blank"> Visit Website </a>
+          <a class="button" href="sponsorship_packet.pdf" target="_blank"> View Sponsorship Packet </a>
+          <a class="button" href="https://www.youtube.com/channel/UCYLMLKmgTJUMDos3ekQzPNg" target="_blank"> Watch Promotional Videos </a>
+       </div>
+   </div>
+</div>
+<div id="PRYDE" class="basiccontain" style="background-color: #F3E7C7;">
+    <div class = "flex">
+        <div id="blurb" class="picture">
+           <img src="cusail.jpg">
+        </div>
+       <div class="text">
+          <h4> <span style="color: #000000; text-align: right;"> BUSINESS SUBTEAM LEAD </h4>
+          <h4> <b> <span style="color: #34626C; text-align: right;"> CUSAIL </h4></b>
+          <p> Cornell Autonomous Sailboat Team (CUSail) is an engineering project team that designs, builds, and manufactures a boat capable of autonomous navigation.</p>
+          <p> As Business Subteam Lead, I am in charge of all administrative tasks, branding, and corporate and public relations for CUSail. During my time on the team, I have worked on the team's logos, sponsorship information packet, and various other media.</p> <br>
+          <a class="button" href="https://cusail.engineering.cornell.edu/index.html" target="_blank"> Visit Website </a>
+          <a class="button" href="sponsorship_packet.pdf" target="_blank"> View Sponsorship Packet </a>
+          <a class="button" href="https://www.youtube.com/channel/UCYLMLKmgTJUMDos3ekQzPNg" target="_blank"> Watch Promotional Videos </a>
+       </div>
+   </div>
+</div>
+
+<!-- art ---------------------------------------------------------------------->
+<div id="art" class="heading" style="background-color: #34626C; height:300px;">
+    <div class="basiccontain" style="top:50%;">
+        <h3> <span style="color: #F3E7C7;">DESIGN</span>
+            <span style="color: #FFFFFF;">+</span>
+            <span style="color: #FFAA5B;">PHOTOS</span>
+    </div>
+</div>
+<div id="design" class="basiccontain">
+     <div class="flex" style="margin-bottom: 50px; margin-top: 100px;">
+         <div class="art-text">
+             <p> My name is Crystal and I am a sophomore at Cornell studying Information Science, Systems, and Technology.</p>
+             <p> At school, I am involved in CUSail, an engineering project team, Cornell IEEE, and Alpha Phi Omega, a national service fraternity.</p>
+             <p> Currently, I'm seeking internships for the summer of 2020. I am most interested in front-end software development and UX design. <br> <br>
+             Feel free to contact me at <a href="mailto:cw683@cornell.edu">cw683@cornell.edu</a> or connect on social media!</p>
+          </div>
+        <div class = "art-flex">
+            <div id="d1" class="design"> <img src="photos/cu.svg"></div>
+            <div id="d3" class="design"> <img src="photos/ieee.svg"></div>
+            <div id="d4" class="design"> <img src="photos/prom.svg"></div>
+            <div id="d4" class="design"> <img src="photos/hs.svg"> </div>
+        </div>
+    </div>
+</div>
+<div id="photo" class="basiccontain">
+    <div class="flex" style="margin-bottom: 50px; margin-top: 50px;">
+        <div class="art-text">
+            <p> My name is Crystal and I am a sophomore at Cornell studying Information Science, Systems, and Technology.</p>
+            <p> At school, I am involved in CUSail, an engineering project team, Cornell IEEE, and Alpha Phi Omega, a national service fraternity.</p>
+            <p> Currently, I'm seeking internships for the summer of 2020. I am most interested in front-end software development and UX design. <br> <br>
+            Feel free to contact me at <a href="mailto:cw683@cornell.edu">cw683@cornell.edu</a> or connect on social media!</p>
+         </div>
+        <div class = "art-flex">
+            <div id="l1" class="landscapePicture"> <img src="photos/light.jpg">
+                <div class="overlayLand"> <h5> "Light" </h5> <p> 41°30'00.1"N 73°58'57.7"W </p> </div> </div>
+            <div id="l3" class="landscapePicture"> <img src="photos/city.jpg">
+                <div class="overlayLand"> <h5> "Hidden City" </h5> <p> 41°33'24.5"N 73°47'29.6"W  </p></div> </div>
+            <div id="l4" class="landscapePicture"> <img src="photos/meta.jpg">
+                <div class="overlayLand"> <h5> "Metamorphosis" </h5> <p> 34°02'19.5"N 118°33'07.8"W  </p></div> </div>
+                <div id="p1" class="portraitPicture"> <img src="photos/lightbulb.jpg">
+                    <div class="overlayPort"> <h5> "Lightbulbs" </h5> <p> 41°52'09.2"N 87°38'01.0"W  </p></div> </div>
+                <div id="p2" class="portraitPicture"> <img src="photos/pitts.jpg">
+                    <div class="overlayPort"> <h5> "Stream" </h5> <p> 40°26'30.3"N 80°00'46.1"W  </p></div> </div>
+                <div id="p3" class="portraitPicture"> <img src="photos/lion.jpg">
+                    <div class="overlayPort"> <h5> "Lion Dance" </h5> <p> 41°35'48.9"N 73°53'32.1"W  </p></div> </div>
+                <div id="p5" class="portraitPicture"> <img src="photos/balloon.jpg">
+                    <div class="overlayPort"> <h5> "Balloons" </h5> <p> 41°36'30.8"N 73°42'22.7"W  </p></div> </div>
+            <div id="l5" class="landscapePicture"> <img src="photos/chicago.jpeg">
+                <div class="overlayLand"> <h5> "Meteor Shower" </h5> <p> 41°52'05.7"N 87°36'53.2"W  </p></div> </div>
+            <div id="l7" class="landscapePicture"> <img src="photos/peonant.jpg">
+                <div class="overlayLand"> <h5> "Peonant" </h5> <p> 41°33'24.3"N 73°47'28.9"W  </p></div></div>
+            <div id="l8" class="landscapePicture"> <img src="photos/gold.jpg">
+                <div class="overlayLand"> <center> <h5> "Spring" </h5> <p> 41°29'06.1"N 73°47'39.0"W </p> </center> </div></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="new script.js"></script>
+</html>
