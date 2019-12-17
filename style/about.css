@@ -35,6 +35,7 @@
     height: auto;
         min-height: 700px;
     z-index:0;
+    margin-block-Start: 4em;
 }
 
 .aboutflex{
@@ -63,10 +64,21 @@
 }
 
 .aboutpicture img{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height: auto;
 }
 
 .img{
     position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .navabout{
+        opacity: 0;
+    }
+
+    .navmobile{
+        opacity: 1;
+    }
 }
