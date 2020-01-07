@@ -1,31 +1,3 @@
-.navabout a{
-    margin-left: 50px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #1EA5AD;
-    transition: all .05s;
-}
-
-.navabout{
-    width: 100%;
-    z-index: 999;
-    margin-top: 5%;
-    font-weight:bold;
-    padding-left:50px;
-    background-image: "backgrounds/about.svg";
-}
-
-.navabout img{
-    vertical-align: middle;
-}
-
-.navabout a:hover {
-    color: #FFE59E;
-    transition: all .05s;
-    position: relative;
-}
-
-
 .aboutcontain {
     position: relative;
     display: inline-block;
@@ -62,7 +34,6 @@
     height: auto;
     padding-top: 25px;
 }
-
 .aboutpicture img{
     width: 90%;
     max-width: 400px;
@@ -71,14 +42,4 @@
 
 .img{
     position: relative;
-}
-
-@media only screen and (max-width: 600px) {
-    .navabout{
-        opacity: 0;
-    }
-
-    .navmobile{
-        opacity: 1;
-    }
 }

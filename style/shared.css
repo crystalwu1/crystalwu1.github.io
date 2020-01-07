@@ -2,81 +2,23 @@ html {
     scroll-behavior: smooth;
     background-color: #FFFCF4;
 }
-
 body {
   font-family: "Open Sans";
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
-
 a {
     text-decoration: none;
     color: #1EA5AD;
 }
-
 a:hover {
     color: #FFE59E;
     border-color: #FFE59E;
     transition: all .25s;
 }
 
-.nav a{
-    margin-left: 5%;
-    font-size: 20px;
-}
-
-.nav img{
-    vertical-align: middle;
-}
-
-.social{
-    color: #E76060;
-}
-
-.nav{
-    width: 100%;
-    z-index: 999;
-    margin-top: 5%;
-    font-weight:bold;
-    padding-left:50px;
-}
-
-.navmobile{
-    width: 100%;
-    opacity: 0;
-    position: fixed;
-    top: 0px;
-}
-
-.navmobile img{
-    width: 20%;
-    height: auto;
-    margin: 10% 30% 5% 30%;
-}
-
-.navmobile a{
-    font-size: 20px;
-    align: center;
-    display: block;
-    margin-left: 20%;
-}
-
-.contact{
-    width: 100%;
-    z-index: 999;
-    margin-top: 5%;
-    font-weight:bold;
-    padding-left:15%;
-    padding-right:15%;
-    margin-bottom: 5%;
-}
-
-.contact a{
-    margin-left: 50px;
-    font-size: 20px;
-}
-/* fonts--------------------------------------------------------------------- */
+/* fonts */
 h1{
     font-size: 65px;
     letter-spacing:0.1em;
@@ -93,27 +35,28 @@ h2{
     padding-right: 10%;
     text-align: left;
 }
-
 h3{
     font-size: 35px;
-    font-weight: 800;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    font-weight: 600;
     text-align: left;
     display:block;
+    margin-block-start: 0em;
+    line-height: 35px;
 }
-
 h4{
     font-size: 20px;
     font-weight: 600;
 }
-
 h5{
     font-size: 20px;
     color: #1EA5AD;
     display: inline-block;
 }
-
+h6{
+    font-size: 20px;
+    color: #1EA5AD;
+    display: block;
+}
 p{
     font-size: 13pt;
     letter-spacing: 0.05em;
@@ -122,6 +65,42 @@ p{
     display: block;
 }
 
+/* Navigation */
+.nav{
+    width: auto;
+    z-index: 999;
+    margin-top: 5%;
+    font-weight:bold;
+    padding-left:50px;
+    padding-right:50px;
+}
+.nav a{
+    margin-left: 5%;
+    font-size: 20px;
+}
+.nav img{
+    vertical-align: middle;
+}
+.social{
+    color: #E76060;
+}
+
+/* Contact */
+.contact{
+    width: 100%;
+    z-index: 999;
+    margin-top: 5%;
+    font-weight:bold;
+    padding-left:15%;
+    padding-right:15%;
+    margin-bottom: 5%;
+}
+.contact a{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+/* Projects */
 .project-contain{
     padding: 100px;
     display: flex;
@@ -129,12 +108,22 @@ p{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .project-description{
     /* background-color: #1EA5AD; */
     margin: 50px;
 }
-
+.project-description img{
+    /* height: 100%; */
+    max-height: 300px;
+    width: auto;
+}
+.project-picture{
+    opacity: 1;
+    background-color: #E76060;
+}
+.project-picture:hover{
+    opacity: 0;
+}
 .project-picture, .project-description{
     width:85%;
     height: auto;
@@ -142,23 +131,6 @@ p{
     /* max-height: 300px; */
     height: auto;
     position: relative;
-}
-
-.project-description img{
-    /* height: 100%; */
-    max-height: 300px;
-    width: auto;
-}
-
-
-
-.project-picture{
-    opacity: 1;
-    background-color: #E76060;
-}
-
-.project-picture:hover{
-    opacity: 0;
 }
 
 .button {
@@ -171,13 +143,11 @@ p{
     margin-right: 50px;
     letter-spacing: 0.1em;
 }
-
 .button:hover{
     color: white;
     background-color: #FFE59E;
     transition: 0.1s;
 }
-
 .button2 {
     padding: 10px;
     padding-left: 30px;
@@ -188,7 +158,6 @@ p{
     margin-right: 50px;
     letter-spacing: 0.1em;
 }
-
 .button2:hover{
     color: white;
     background-color: #FFE59E;
@@ -199,6 +168,24 @@ p{
 .body{
     overflow-x: hidden;
 }
+
+.nav a{
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-left: 0px;
+}
+.nav img{
+    width: 20%;
+    height: auto;
+    margin: 10% 20% 5% 20%;
+}
+.social{
+    display: block;
+}
+
 .project-contain{
     padding:20px;
 }
@@ -207,23 +194,15 @@ p{
     width: 100%;
     margin: 0;
     margin-block-start: 3em;
-
-
 }
-
 .project-description img{
     width: 100%;
     margin-block-end: 1em;
 }
 
-.social{
-    display: block;
-}
-
 .contact{
     margin-bottom: 10%;
 }
-
 .contact a{
     margin-left: 0px;
 
