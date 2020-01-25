@@ -58,7 +58,7 @@ li{
     padding: 40px;
 }
 .gallery-item img:hover{
-    opacity: .15;
+    /* opacity: .15; */
     transition: 0.08s;
 }
 
