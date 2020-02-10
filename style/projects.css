@@ -2,23 +2,32 @@
 
 p {
     font-size: 20px;
+    /* padding-right: 10%; */
+    /* padding-left: 10%; */
+
 }
 
 h3{
     margin-block-start: 1em;
+    width: 100%;
 }
 
 li{
     font-size: 20px;
 }
+
+ul{
+    padding-left: 0px;
+}
 .wrapper{
-    padding: 300px;
+    padding: 10%;
     padding-top: 100px;
     padding-bottom: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1500px;
 }
 .wrapper img{
     width: 85%;
