@@ -1,2 +1,1 @@
-﻿# crystalwu1.github.io
-Personal website.
+Crystal Wu's Personal Website
