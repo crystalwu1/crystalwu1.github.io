@@ -1,0 +1,78 @@
+.articlewrapper h1{
+  font-size: 30pt;
+  font-weight: bold;
+  padding-left: 0%;
+  margin-block-end: 3%;
+  font-family: 'Lato';
+
+}
+
+.articlewrapper {
+  width: 65%;
+  margin-bottom: 10em;
+
+}
+
+.articlewrapper h1{
+  font-size: 30pt;
+  font-weight: bold;
+  padding-left: 0%;
+  margin-block-end: 3%;
+  font-family: 'Lato';
+
+}
+
+.articlewrapper p{
+  font-size: 15pt;
+  font-family: 'Lato';
+
+}
+
+.articleimage{
+  position: relative;
+  width: 84%;
+  height: auto;
+  align-self: center;
+  margin-top: 20px;
+  margin-left: 8%;
+}
+
+.articlewrapper iframe{
+  width: 80%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.galleryitem{
+  width: 38.5%;
+  height: auto;
+  opacity: 1;
+  margin: 2%;
+  min-width: 300px;
+}
+.galleryitem img{
+  width: 100%;
+  height: auto;
+  top: 0%;
+  position: relative;
+}
+
+.caption{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.caption p{
+  text-align: center;
+  font-style: italic;
+  font-size: 12pt;
+}
+
+ul {
+  font-size: 15pt;
+  font-family: Lato;
+}

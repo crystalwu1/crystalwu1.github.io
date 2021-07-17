@@ -1,0 +1,29 @@
+.wrapper {
+  width: 12%;
+  height: 100%;
+  margin-left: 12%;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #ffFCF4;
+}
+
+.nav {
+  height: 30vh;
+
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 750px){
+}
+
+@media only screen and (max-width: 550px){
+  .wrapper {
+    display: none;
+  }
+}

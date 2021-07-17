@@ -1,0 +1,102 @@
+.pryde{
+  background: repeating-linear-gradient(60deg, #1796E0, #99D85D, #FFAB3F);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pryde:hover{
+  background: repeating-linear-gradient(60deg, #1796E0, #99D85D, #FFAB3F, #1796E0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+}
+
+.pioneer{
+  background: linear-gradient(60deg, #FFAB3F, #99D85D, #1796E0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pioneer:hover{
+  background: repeating-linear-gradient(60deg, #FFAB3F, #99D85D, #1796E0, #FFAB3F);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.netflix{
+  background: linear-gradient(60deg, #B1060f, #e50913);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.netflix:hover{
+  background: repeating-linear-gradient(60deg, #B1060f, #e50913, #B1060f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.cusail{
+  background: linear-gradient(60deg, #b31b1b, #65c8d0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cusail:hover{
+  background: repeating-linear-gradient(60deg,#b31b1b, #65c8d0, #b31b1b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.ieee{
+  background: linear-gradient(60deg, #78C1FF, #0C1C8C);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ieee:hover{
+  background: repeating-linear-gradient(60deg, #78C1FF, #0C1C8C, #78C1FF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.tetris{
+  background: linear-gradient(60deg, #D71037, #E35B02, #E39F00, #58B103, #0F9AD7, #2140C6, #AF298B);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tetris:hover{
+  background: repeating-linear-gradient(60deg, #D71037, #E35B02, #E39F00, #58B103, #0F9AD7, #2140C6, #AF298B, #D71037);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.brand{
+  background: linear-gradient(60deg, #E76060, #1EA5AD);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand:hover{
+  background: repeating-linear-gradient(60deg, #E76060, #1EA5AD, #E76060);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+}
