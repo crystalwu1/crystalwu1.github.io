@@ -1,0 +1,22 @@
+.wrapper {
+  width: 12%;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+  height: 7%;
+  padding-left: 5%;
+  padding-top: 5%;
+  position: fixed;
+  z-index: 999;
+}
+
+.name {
+  margin-top: 5%;
+  height: 85%;
+  width: auto;
+  position: fixed;
+  z-index: 1;
+}
