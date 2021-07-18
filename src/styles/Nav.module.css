@@ -37,7 +37,8 @@ button {
   border: none;
   color: #1EA5AD;
   font-family: Lato;
-  font-size: 15pt;
+  font-size: 2vh;
+  width: fit-content;
 }
 
 

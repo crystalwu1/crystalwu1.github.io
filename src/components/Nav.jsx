@@ -15,9 +15,12 @@ function elementInView(elem) {
 
 function scrollToElem(elem) {
   if (elem === 'about') {
-    window.scrollTo(0, document.getElementById(elem).offsetTop - 50)
+    window.scrollTo(0, 0)
   } else {
-    window.scrollTo(0, document.getElementById(elem).offsetTop - window.innerHeight / 2 + 100)
+    const top = document.getElementById(elem).offsetTop;
+    const height = document.getElementById(elem).offsetHeight;
+    const windowHeight = window.innerHeight;
+    window.scrollTo(0, Math.min(top - 100, top + height / 2 - windowHeight / 2))
   }
 }
 
@@ -31,7 +34,7 @@ export default ({ articleState, callback }) => {
 
   useEffect(() => {
     window.addEventListener('load', () => {
-      setInit(true);
+      if (window.scrollY === 0) { setInit(true) };
     })
     window.addEventListener('scroll', () => {
       setInit(false)
