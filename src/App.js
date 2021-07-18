@@ -11,12 +11,18 @@ import Pryde from './components/Pryde';
 import Cusail from './components/Cusail';
 import Home from './components/Home';
 import Pioneer from './components/Pioneer';
+import { Helmet } from "react-helmet";
+import MobileNav from './components/MobileNav';
 
 function App() {
   return (
     <div>
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
+      </Helmet>
       <Title />
-      <Nav></Nav>
+      <Nav />
+      <MobileNav />
       <Router basename={`${process.env.PUBLIC_URL}/`}>
         <Switch>
           <Route path="/" exact component={Home} />

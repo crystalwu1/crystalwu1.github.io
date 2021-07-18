@@ -1,25 +1,37 @@
+.titlecaption {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 42px;
+  padding-bottom: 2%;
+}
+
+.tags {
+  font-weight: lighter;
+  font-size: 1.2vw;
+}
+
 .articlewrapper {
   margin-bottom: 10em;
   width: 90%;
 }
 
-.articlewrapper h1{
+.articlewrapper h1 {
   font-size: 30pt;
   margin-block-start: 2em;
 }
 
-.articleimage{
+.articleimage {
   width: 84%;
   margin-top: 20px;
   margin-left: 8%;
 }
 
-.smallimage{
+.smallimage {
   width: 60%;
   padding-left: 20%;
 }
 
-.articlewrapper iframe{
+.articlewrapper iframe {
   height: 50vh;
   width: 80%;
   margin-left: 10%;
@@ -33,24 +45,25 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.galleryitem{
+
+.galleryitem {
   width: 38.5%;
   height: auto;
   opacity: 1;
   margin: 2%;
   min-width: 300px;
 }
-.galleryitem img{
+
+.galleryitem img {
   width: 100%;
   height: auto;
   top: 0%;
   position: relative;
 }
 
-.caption p{
+.caption p {
   text-align: center;
   font-style: italic;
   font-size: 12pt;
-
   margin-block-end: 5em;
 }

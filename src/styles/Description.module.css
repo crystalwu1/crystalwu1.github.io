@@ -8,36 +8,28 @@
   background-color: #ffFCF4;
 }
 
-.flexrow{
-  display: flex;
-}
+/* Title CSS */
 
 .title {
-  height: 100vh;
+  min-height: 100vh;
   z-index: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .heading {
-  font-weight:900;
+  font-weight: 900;
   text-align: right;
   font-size: 10vw;
   line-height: 150px;
   padding-left: 0%;
   padding-top: 0%;
-}
-
-.profiletext{
-  width: 30%;
-  padding-left: 5%;
-}
-
-.profiletext p{
-  margin-block-start: 0em;
-}
-
-a{
-  color: black;
-  text-decoration: underline;
 }
 
 .blue {
@@ -48,16 +40,25 @@ a{
   color: #E76060
 }
 
-.flexrow img{
-  width: 60%;
-  object-fit: cover;
+/* Profile */
+
+.profiletext {
+  width: 30%;
+  padding-left: 5%;
 }
 
-.titlecaption{
-  font-weight: 300;
-  font-size: 35px;
-  line-height: 42px;
-  padding-bottom: 2%;
+.profiletext p {
+  margin-block-start: 0em;
+}
+
+.flexrow {
+  display: flex;
+}
+
+.flexrow img {
+  width: 60%;
+  object-fit: contain;
+  align-self: baseline;
 }
 
 .arrow {
@@ -67,8 +68,6 @@ a{
   padding: 7px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-
-
 }
 
 .arrowWrapper {
@@ -76,75 +75,59 @@ a{
   margin-left: 45%;
 }
 
-.arrowWrapper:hover{
+.arrowWrapper:hover {
   opacity: .75;
   transform: translateY(3px);
   transition: 0.25s;
 }
 
-.tags {
-  font-weight: lighter;
-  font-size: 1.2vw;
-
-}
-
-.skills {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-a:hover {
-  color: #E76060;
-  transition: 0.25s;
-}
+/* Resume */
 
 .textbox {
   padding-bottom: 10vh;
-  width:50%;
+  width: 50%;
   padding-right: 5%;
 }
 
-.textbox h1{
+.textbox h1 {
   font-weight: 800;
   font-size: 15px;
   line-height: 42px;
   letter-spacing: 0.05em;
   margin-bottom: 0%;
   margin-top: 5%;
-
   text-transform: uppercase;
 }
 
-.textbox p{
-  font-size: 2vh;
-  /* letter-spacing: 0.1em; */
+.textbox p {
+  font-size: calc(12px + 0.5vw);
   margin-top: 1%;
   font-weight: 300;
   margin-left: 5%;
-  
-  /* text-transform: uppercase; */
 }
 
-.textbox a{
+.textbox a {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   letter-spacing: -0.02em;
   text-decoration: none;
   color: #1EA5AD;
-
 }
 
-.textbox a:hover{
+.textbox a:hover {
   color: #E76060;
 }
 
-.job{
+.section {
+  margin-bottom: 20%;
+}
+
+.job {
   margin-bottom: 10px;
 }
 
-.nonlinkjob{
+.nonlinkjob {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -153,27 +136,35 @@ a:hover {
   color: #000000;
 }
 
+.description {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .skills h1, .projects h1 {
+  min-width: 130px;
   font-weight: 700;
   text-transform: none;
   letter-spacing: 0;
-  font-size: 2vh;
+  font-size: calc(12px + 0.5vw);
 }
 
 .skills p {
   margin-left: 0;
 }
 
-.description {
-  margin-left: 10px;
-  font-weight: 400;
-}
-
-.hovertext {
+.imagehover {
   width: 30%;
 }
 
-.hovertext img {
+.imagehover img {
   position: fixed;
   top: 0;
   margin-top: 10%;
@@ -182,11 +173,38 @@ a:hover {
   visibility: hidden;
 }
 
-.section {
-  margin-bottom: 20%;
+@media only screen and (max-width: 800px) {
+  .flexrow img {
+    margin-bottom: 5%;
+  }
+  .flexrow {
+    flex-direction: column;
+  }
+  .profiletext {
+    width: 95%;
+    padding-left: 0;
+  }
 }
 
+@media (hover:none) {
+  .imagehover {
+    display: none;
+  }
+  .textbox {
+    width: 95%;
+  }
+}
 
-
-@media only screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
+  .wrapper {
+    margin-left: 0;
+    padding-right: 5%;
+    width: 90%
+  }
+  .textbox p {
+    font-size: initial;
+  }
+  .description {
+    display: block;
+  }
 }

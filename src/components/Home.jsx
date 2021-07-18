@@ -112,7 +112,7 @@ export default () => {
             <h1>Skills</h1>
             <div className={styles.skills}>
               <div>
-                <h1 className={styles.lighter}> Programming </h1>
+                <h1 className={styles.lighter}> Development </h1>
                 <p> Python </p>
                 <p> JavaScript </p>
                 <p> TypeScript </p>
@@ -191,7 +191,7 @@ export default () => {
           </div>
         </div >
 
-        <div className={styles.hovertext}>
+        <div className={styles.imagehover}>
           <img id='capone' src={blank} />
           <img id='if' src={blank} />
 
