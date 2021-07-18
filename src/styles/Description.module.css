@@ -1,37 +1,29 @@
 .wrapper {
   margin-left: 24%;
-  padding-right: 5%;
-  padding-top: 5%;
-  width: auto;
-  height: 100%;
-  float: left;
-  max-height:100%;
+  padding: 5%;
+  padding-top: 0;
+  width: 66%;
   overflow-y: auto;
   overflow-x: hidden;
-
   background-color: #ffFCF4;
-}
-
-.title {
-  height: 100vh;
-}
-
-.heading {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  text-align: right;
-
-  font-size: 10vw;
-  line-height: 150px;
-
-  padding-left: 0%;
-  padding-top: 0%;
-  margin-block-start: 0%;
 }
 
 .flexrow{
   display: flex;
+}
+
+.title {
+  height: 100vh;
+  z-index: 900;
+}
+
+.heading {
+  font-weight:900;
+  text-align: right;
+  font-size: 10vw;
+  line-height: 150px;
+  padding-left: 0%;
+  padding-top: 0%;
 }
 
 .profiletext{
@@ -40,10 +32,6 @@
 }
 
 .profiletext p{
-  font-size: 13pt;
-  font-family: 'Lato';
-  font-weight: lighter;
-
   margin-block-start: 0em;
 }
 
@@ -55,50 +43,35 @@
   color: #E76060
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.smallimage, .profile {
+.flexrow img{
   width: 60%;
-}
-
-.smallimage{
-  padding-left: 15%;
+  object-fit: cover;
 }
 
 .titlecaption{
-  font-family: Lato;
-  font-style: normal;
   font-weight: 300;
   font-size: 35px;
   line-height: 42px;
-  
-  color: #000000;
   padding-bottom: 2%;
 }
 
 .tags {
-  font-family: Lato;
-  font-style: normal;
   font-weight: lighter;
   font-size: 1.2vw;
 
-  color: #000000;
 }
 
-
-
-h2 {
-  font-family: 'Lato';
+.skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-
 
 
 a {
   text-decoration: none;
   color: #1EA5AD;
-  font-family: Lato;
+  
 }
 
 a:hover {
@@ -108,39 +81,34 @@ a:hover {
 .textbox {
   padding-bottom: 10vh;
   width:50%;
+  padding-right: 5%;
 }
 
 .textbox h1{
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 15px;
   line-height: 42px;
   letter-spacing: 0.05em;
-
-
-  color: #000000;
-  padding-left: 0%;
   margin-bottom: 0%;
   margin-top: 5%;
+
+  text-transform: uppercase;
 }
 
 .textbox p{
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  letter-spacing: 0.1em;
+  font-size: 2vh;
+  /* letter-spacing: 0.1em; */
   margin-top: 1%;
-  color: #000000;
+  font-weight: 300;
+  margin-left: 5%;
+  
+  /* text-transform: uppercase; */
 }
 
 .textbox a{
-  font-family: Lato;
-  font-style: normal;
   font-weight: bold;
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 25px;
+  line-height: 30px;
   letter-spacing: -0.02em;
   text-decoration: none;
   color: #1EA5AD;
@@ -151,92 +119,53 @@ a:hover {
   color: #E76060;
 }
 
+.job{
+  margin-bottom: 10px;
+}
+
+.nonlinkjob{
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.skills h1, .projects h1 {
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 2vh;
+}
+
+.skills p {
+  margin-left: 0;
+}
+
+.description {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
 .hovertext {
   width: 30%;
-  /* display: none; */
 }
 
-.cover {
+.hovertext img {
   position: fixed;
-  width: 100%;
-  z-index: 999;
-  top:10%;
-}
-
-.cover img{
+  top: 0;
+  margin-top: 10%;
+  margin-left: 3%;
   width: 23%;
-  background-repeat: repeat;
-  opacity: 1;
-  transition: 0.5s;  
+  visibility: hidden;
 }
 
-@keyframes move {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 25%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.section {
+  margin-bottom: 20%;
 }
 
 
-
-@media only screen and (max-width: 800px){
-  .title{
-    width: 100%;
-  }
-
-  .caption p{
-    font-size: 10pt;
-  }
-  
-  ul {
-    font-size: 12pt;
-  }
-
-  .heading {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  
-  .titlecaption{
-    font-size: 25px;
-    line-height: 35px;
-  }
-  
-  .tags {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  
-  .articlewrapper h1{
-    font-size: 15pt;
-  }
-
-  .textbox a{
-    font-size: 25px;
-    line-height: 35px;
-    letter-spacing: -0.02em;
-  }  
-
-  .textbox h1{
-    font-size: 12px;
-    line-height: 35px;
-    letter-spacing: 0.05em;
-  }
-  
-  .textbox p{
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    margin-top: 1%;
-  }
-}
 
 @media only screen and (max-width: 550px){
-  .wrapper {
-    padding-left: 5%;
-  }
 }

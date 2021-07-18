@@ -1,3 +1,32 @@
+.apo{
+  background: linear-gradient(60deg, #0033ab, #ffb512);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.apo:hover{
+  background: repeating-linear-gradient(60deg,#0033ab, #ffb512, #0033ab);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.balch{
+  background: linear-gradient(60deg, #d83d3d63, #a3050563);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.balch:hover{
+  background: repeating-linear-gradient(60deg, #d83d3d63, #a3050563, d83d3d63);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+}
+
 .brand{
   background: linear-gradient(60deg, #E76060, #1EA5AD);
   background-clip: text;
@@ -12,14 +41,59 @@
   animation: move 6s ease infinite;
 }
 
+.capitalone{
+  background: linear-gradient(60deg, #00396f, #da3540);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.capitalone:hover{
+  background: repeating-linear-gradient(60deg,#00396f, #da3540, #00396f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
 .cusail{
-  background: linear-gradient(60deg, #b31b1b, #65c8d0);
+  background: linear-gradient(60deg, #b31b1b, #002D5F, #65c8d0);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .cusail:hover{
-  background: repeating-linear-gradient(60deg,#b31b1b, #65c8d0, #b31b1b);
+  background: repeating-linear-gradient(60deg,#b31b1b, #002D5F, #65c8d0, #002D5F, #b31b1b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.ddw{
+  background: linear-gradient(60deg, #C6275C, #E4ABA4, #26C8CB );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ddw:hover{
+  background: repeating-linear-gradient(60deg, #26C8CB, #C6275C, #E4ABA4, #26C8CB );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: move 6s ease infinite;
+
+}
+
+.infinitefoods{
+  background: linear-gradient(60deg, #ADC33F, #7b8b26);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.infinitefoods:hover{
+  background: repeating-linear-gradient(60deg,#ADC33F, #7b8b26, #ADC33F);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 800% 800%;

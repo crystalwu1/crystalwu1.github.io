@@ -1,25 +1,22 @@
 import React from 'react';
 import styles from '../styles/Description.module.css';
+import gradientcss from '../styles/GradientText.module.css';
 import profile from '../images/profile.jpeg';
 
-import aboutcover from '../images/aboutcover.png'
-import tetriscover from '../images/aboutcover.png'
-import websitecover from '../images/websitecover.svg'
 import photocover from '../images/photocover.svg'
 import designcover from '../images/designcover.png'
 import connectcover from '../images/connectcover.svg'
 import pioneercover from '../images/pioneercover.svg'
 import cusailcover from '../images/cusailcover.svg'
 import netflixcover from '../images/netflixcover.svg'
-import ieeecover from '../images/ieeecover.svg'
 import blank from '../images/blank.png'
 
-const covers = [blank, aboutcover, connectcover, netflixcover, pioneercover, cusailcover, ieeecover, websitecover, designcover, photocover, tetriscover]
-function changeCover(c) {
-  document.getElementById('cover').setAttribute('style', 'display: block;')
-  document.getElementById('coverphoto').src = covers[c];
-  if (c == 0) {
-    document.getElementById('cover').setAttribute('style', 'display: none;');
+function changeCover(c, cover) {
+  if (c != 0) {
+    document.getElementById(cover).setAttribute('style', 'visibility: visible; opacity: 1')
+  }
+  else {
+    document.getElementById(cover).setAttribute('style', 'visibility: hidden; opacity: 0');
   }
 }
 
@@ -28,75 +25,191 @@ export default () => {
     <div className={styles.wrapper}>
 
 
+      <div id="about" >
+        <div className={styles.title}>
+          <h1 className={styles.heading}>
+            <span className={styles.blue}>Crystal</span>
+            <span className={styles.red}> Wu</span>
+          </h1>
 
-      <div id="about" className={styles.title}>
-        <h1 className={styles.heading}>
-          <span className={styles.blue}>Crystal</span>
-          <span className={styles.red}> Wu</span>
-        </h1>
-
-        <div className={styles.flexrow}>
-          <img className={styles.profile} src={profile} />
-          <div className={styles.profiletext}>
-            <p>Hello! I'm a senior at Cornell University studying Computer Science. I'm originally from East Fishkill, NY, home to many <a href={'https://www.hopewelldepotmuseum.org/'} target="_blank">old railroad tracks.</a> </p>
-            <p>background in design and visual art. combine with coding to create user-centered products</p>
-            <p>passion for teaching</p>
-            <p>Hobbies, thrifting, movies, most recently discovered printmaking</p>
+          <div className={styles.flexrow}>
+            <img src={profile} />
+            <div className={styles.profiletext}>
+              <p>Hello! I'm a senior at Cornell University studying Computer Science. I'm originally from East Fishkill, NY, home to many <a href={'https://www.hopewelldepotmuseum.org/'} target="_blank">old railroad tracks.</a> </p>
+              <p>background in design and visual art. combine with coding to create user-centered products</p>
+              <p>passion for teaching</p>
+              <p>Hobbies, thrifting, movies, most recently discovered printmaking</p>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
+
 
       <div className={styles.flexrow}>
         <div className={styles.textbox}>
-          <h1 id="work">WORK</h1>
-          <a href={'https://www.capitalone.com/'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>capital one</a>
-          <p>SWE INTERN / SU21</p>
-          <a href={'https://www.infinitefoods.com/'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>infinite foods</a>
-          <p>COLLECTION / FA13 - PRESENT</p>
 
-          <h1 id="school">SCHOOL</h1>
-          <a href={'https://cusail.engineering.cornell.edu/index.html'} target="_blank" className={styles.cusail} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>cusail</a>
-          <p>TEAM LEAD / FA18 - PRESENT</p>
-          <a href={'http://www.apogamma.org/'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>alpha phi omega</a>
-          <p>WEBMASTER, AOMA / SP19 - PRESENT</p>
-          <a href={'http://www.apogamma.org/'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>balch hall, toni morrison hall</a>
-          <p>RESIDENT ADVISOR / SP20 - PRESENT</p>
-          <a href={'http://www.apogamma.org/'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>cs1110</a>
-          <p>CONSULTANT / FA19 - SP20</p>
-          <a href={'http://www.apogamma.org/'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>cs3110</a>
-          <p>CONSULTANT / FA20 </p>
-          <a href={'http://www.apogamma.org/'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>cs3300</a>
-          <p>TEACHING ASSISTANT / FA21 </p>
+          <div id="work" className={styles.section}>
+            <h1 >Work</h1>
+            <div className={styles.job}>
+              <a href={'https://www.capitalone.com/'}
+                target="_blank"
+                className={gradientcss.capitalone}
+                onMouseEnter={() => changeCover(1, "capone")}
+                onMouseLeave={() => changeCover(0, "capone")}>
+                Capital One
+              </a>
+              <span className={styles.description}>SWE Intern / SU21</span>
+              <p> Worked with 3 other interns in an agile environment to design and develop a front-end for Focus Partner Portal, an internal document storage tool. </p>
+            </div>
+            <div className={styles.job}>
+              <a href={'https://www.infinitefoods.com/'} target="_blank" className={gradientcss.infinitefoods} onMouseEnter={() => changeCover(1, "if")} onMouseLeave={() => changeCover(0, "if")}>Infinite Foods</a>
+              <span className={styles.description}>Website Intern / SU20 - SP21</span>
+              <p> Optimized and configured automated coupon generation, SEO indexing, store locator, and several other features on Wordpress website. Worked with sales team to develop efficient methods to update and maintain store locations database. </p>
+            </div>
+          </div>
 
-          <h1 id="code">CODE</h1>
-          <a href={'https://github.com/crystalwu1/tetris'} target="_blank" className={styles.tetris} onMouseEnter={() => changeCover(10)} onMouseLeave={() => changeCover(0)}> ocaml tetris</a >
-          <p>CLASS PROJECT / SP20</p>
+          <div id="school" className={styles.section}>
+            <h1 >School</h1>
+            <div className={styles.job}>
+              <a href={'https://cornell.edu'} target="_blank" className={gradientcss.netflix} onMouseEnter={() => changeCover(1, "cornell")} onMouseLeave={() => changeCover(0, "cornell")}>CS @ Cornell University</a>
+              <span className={styles.description}>Class of 2022</span>
+              <p> Dean's List Fall 2018, Fall 2020, Spring 2021</p>
+              <p> Coursework: Data-Driven Web Applications, Human-Computer Interaction, Learning Analytics, Computer Graphics, Computer Vision, Systems Programming, and more.</p>
+            </div>
+            <div className={styles.job}>
+              <a href={'https://cusail.engineering.cornell.edu/index.html'} target="_blank" className={gradientcss.cusail} onMouseEnter={() => changeCover(1, "cusail")} onMouseLeave={() => changeCover(0, "cusail")}>CUSail</a>
+              <span className={styles.description}>Team Lead</span>
+              <p>Leads a team of 30 undergraduates to design and build a fully autonomous robotic sailboat. Previously Business and Operations Lead.</p>
+            </div>
+            <div className={styles.job}>
+              <a href={'http://www.apogamma.org/'} target="_blank" className={gradientcss.apo} onMouseEnter={() => changeCover(1, "apo")} onMouseLeave={() => changeCover(0, "apo")}>Alpha Phi Omega</a>
+              <span className={styles.description}>Webmaster</span>
+            </div>
+            <div className={styles.job}>
+              <a href={'https://github.com/crystalwu1/tetris'} target="_blank" className={gradientcss.balch} onMouseEnter={() => changeCover(1, "balch")} onMouseLeave={() => changeCover(0, "balch")}>Balch Hall</a>
+              <span className={styles.description}>Resident Advisor</span>
+            </div>
+            <div className={styles.job}>
+              <a href={'https://github.com/crystalwu1/tetris'} target="_blank" onMouseEnter={() => changeCover(1, "3300")} onMouseLeave={() => changeCover(0, "3300")}>CS3300</a>
+              <span className={styles.description}>Teaching Assistant FA21 / Data-Driven Web Apps </span>
+            </div>
+            <div className={styles.job}>
+              <a href={'https://github.com/crystalwu1/tetris'} target="_blank" onMouseEnter={() => changeCover(1, "3110")} onMouseLeave={() => changeCover(0, "3110")}>CS3110</a>
+              <span className={styles.description}>Consultant FA20 / Function Programming </span>
+            </div>
+            <div className={styles.job}>
+              <a href={'https://github.com/crystalwu1/tetris'} target="_blank" onMouseEnter={() => changeCover(1, "1110")} onMouseLeave={() => changeCover(0, "1110")}>CS1110</a>
+              <span className={styles.description}>Consultant FA19 + SP20 / Intro to Computing in Python</span>
+            </div>
+          </div>
 
-          <h1 id="design">DESIGN</h1>
-          <a href={'/pryde-connect'} className={styles.pryde} onMouseEnter={() => changeCover(2)} onMouseLeave={() => changeCover(0)} >pryde connect</a>
-          <p>UX DESIGN / SU19</p>
-          <a href={'/cusail'} className={styles.cusail} onMouseEnter={() => changeCover(5)} onMouseLeave={() => changeCover(0)}>cusail</a>
-          <p>BRANDING, WEB DESIGN / FA18 - PRESENT</p>
-          <a href={'https://medium.com/@crystalwu12340/netflix-concept-summaries-691418686198'} target="_blank" className={styles.netflix} onMouseEnter={() => changeCover(3)} onMouseLeave={() => changeCover(0)}>netflix: digest</a>
-          <p>UX CASE STUDY / FA19</p>
-          <a href={'/pryde-pioneer'} className={styles.pioneer} onMouseEnter={() => changeCover(4)} onMouseLeave={() => changeCover(0)}>pryde pioneer</a>
-          <p>MOBILE UX DESIGN / FA19</p>
+          <div id="skills" className={styles.section}>
+            <h1>Skills</h1>
+            <div className={styles.skills}>
+              <div>
+                <h1 className={styles.lighter}> Programming </h1>
+                <p> Python </p>
+                <p> JavaScript </p>
+                <p> TypeScript </p>
+                <p> HTML/CSS </p>
+                <p> Java </p>
+              </div>
+              <div>
+                <h1 style={{ visibility: "hidden" }}> . </h1>
+                <p> Node.js </p>
+                <p> Angular </p>
+                <p> Git </p>
+                <p> LaTeX </p>
+                <p> Wordpress </p>
+              </div>
+              <div>
+                <h1 className={styles.lighter}> Design </h1>
+                <p> Figma </p>
+                <p> Adobe Creative Suite </p>
+                <p> Sketch </p>
+              </div>
+            </div>
+          </div>
 
-          <h1 id="art">ART</h1>
-          <a href={''} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>printmaking</a>
-          <p>SP21</p>
-          <a href={'https://vsco.co/crystalwudesign/gallery'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(8)} onMouseLeave={() => changeCover(0)}>graphic design</a>
-          <p>FA17 - PRESENT</p>
-          <a href={'https://vsco.co/wuwuhoo/gallery'} target="_blank" className={styles.red} onMouseEnter={() => changeCover(9)} onMouseLeave={() => changeCover(0)}>photo</a>
-          <p>FA13 - PRESENT</p>
+          <div id="projects" className={styles.section}>
+            <h1>Projects</h1>
+            <div className={styles.projects}>
+              <h1 id="code" className={styles.lighter}>Code</h1>
+              <div className={styles.job}>
+                <a href={'https://github.com/crystalwu1/tetris'} target="_blank" className={gradientcss.ddw} onMouseEnter={() => changeCover(1, "ddw")} onMouseLeave={() => changeCover(0, "ddw")}> Relative Employment betw. U.S. Counties</a >
+                <span className={styles.description}> SP21</span>
+                <p>Starting with a U.S. county of your choice, discover how it compares to the rest of the country in terms of employment rate, education, and income.</p>
+              </div>
+              <div className={styles.job}>
+                <a href={'https://github.com/crystalwu1/tetris'} target="_blank" className={gradientcss.tetris} onMouseEnter={() => changeCover(1, "tetris")} onMouseLeave={() => changeCover(0, "tetris")}>Tetris, but OCaml</a >
+                <span className={styles.description}> SP20</span>
+                <p> A fully function Tetris (and Pentris!) game, written entirely in OCaml.</p>
+              </div>
+
+              <h1 id="product" className={styles.lighter}>Product</h1>
+              <div className={styles.job}>
+                <a href={'/pryde-connect'} className={gradientcss.pryde} onMouseEnter={() => changeCover(1, "connect")} onMouseLeave={() => changeCover(0, "connect")} >PRYDE Connect</a>
+                <span className={styles.description}>UX Design / SU19</span>
+                <p>PRYDE Connect is the place for researchers and practitioners with a shared interest in youth development to connect to each other.</p>
+              </div>
+              <div className={styles.job}>
+                <a href={'/cusail'} className={gradientcss.cusail} onMouseEnter={() => changeCover(1, "cusailb")} onMouseLeave={() => changeCover(0, "cusailb")}>CUSail Brand</a>
+                <span className={styles.description}>Branding, Web Design / FA18  - Present</span>
+                <p>How I CUSail's current brand from the ground (water?) up.</p>
+              </div>
+              <div className={styles.job}>
+                <a href={'https://medium.com/@crystalwu12340/netflix-concept-summaries-691418686198'} target="_blank" className={gradientcss.netflix} onMouseEnter={() => changeCover(1, "netflix")} onMouseLeave={() => changeCover(0, "netflix")}>Neflix: Digest</a>
+                <span className={styles.description}>UX Case Study / FA19</span>
+                <p>Created a concept to help users to understand the patterns in how they use Netflix. </p>
+              </div>
+              <div className={styles.job}>
+                <a href={'/pryde-pioneer'} className={gradientcss.pioneer} onMouseEnter={() => changeCover(1, "pioneer")} onMouseLeave={() => changeCover(0, "pioneer")}>PRYDE Pioneer</a>
+                <span className={styles.description}>Mobile UX Design / FA19</span>
+                <p>A fresh redesign of a simple survey app.</p>
+              </div>
+
+              <h1 id="art" className={styles.lighter}>Art</h1>
+              <div className={styles.job}>
+                <a href={''} target="_blank" onMouseEnter={() => changeCover(1, "print")} onMouseLeave={() => changeCover(0, "print")}>Printmaking</a>
+                <span className={styles.description}>SP21</span>
+                <p>Screenprinting, intaglio etching, and photolithography.</p>
+              </div>
+              <div className={styles.job}>
+                <a href={'https://vsco.co/crystalwudesign/gallery'} target="_blank" onMouseEnter={() => changeCover(1, "design")} onMouseLeave={() => changeCover(0, "design")}>Graphics</a>
+                <span className={styles.description}>FA17 - Present</span>
+              </div>
+              <div className={styles.job}>
+                <a href={'https://vsco.co/wuwuhoo/gallery'} target="_blank" onMouseEnter={() => changeCover(1, "photo")} onMouseLeave={() => changeCover(0, "photo")}>Photo</a>
+                <span className={styles.description}>FA13 - Present</span>
+              </div>
+            </div>
+          </div>
         </div >
 
         <div className={styles.hovertext}>
-          <div id='cover' className={styles.cover} style={{ display: "none" }}>
-            <img id='coverphoto' src={blank} />
-            <p>Hello</p>
-          </div>
+          <img id='capone' src={blank} />
+          <img id='if' src={blank} />
+
+          <img id='cornell' src={blank} />
+          <img id='cusail' src={blank} />
+          <img id='apo' src={blank} />
+          <img id='balch' src={blank} />
+          <img id='3300' src={blank} />
+          <img id='3110' src={blank} />
+          <img id='1110' src={blank} />
+
+          <img id='ddw' src={blank} />
+          <img id='tetris' src={blank} />
+
+          <img id='connect' src={connectcover} />
+          <img id='cusailb' src={cusailcover} />
+          <img id='netflix' src={netflixcover} />
+          <img id='pioneer' src={pioneercover} />
+
+          <img id='print' src={blank} />
+          <img id='design' src={designcover} />
+          <img id='photo' src={photocover} />
         </div>
       </div>
 
