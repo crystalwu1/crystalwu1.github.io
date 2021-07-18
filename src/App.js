@@ -1,8 +1,6 @@
 import React from 'react';
 import Title from './components/Title'
 import Nav from './components/Nav'
-import Template from './components/Template';
-import Website from './components/Website';
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,7 +23,6 @@ function App() {
           <Route path="/cusail" component={Cusail} />
           <Route path="/pryde-connect" component={Pryde} />
           <Route path="/pryde-pioneer" component={Pioneer} />
-          <Route path="/website" component={Website} />
         </Switch>
       </Router>
     </div >
