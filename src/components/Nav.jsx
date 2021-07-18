@@ -7,7 +7,7 @@ function elementInView(elem) {
   const windowPos = window.scrollY + window.innerHeight / 2
   let top = document.getElementById(elem).offsetTop
   if (elem == 'about') {
-    top -= window.innerHeight / 2
+    return windowPos < window.innerHeight
   }
   const bottom = top + document.getElementById(elem).offsetHeight
   return bottom > windowPos && windowPos > top

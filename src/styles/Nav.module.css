@@ -3,23 +3,37 @@
   height: 100%;
   margin-left: 12%;
   position: fixed;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   background-color: #ffFCF4;
+}
+
+.mobilewrapper {
+  width: 100%;
+  background-color: #ffFCF4;
+  display: none;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: fixed;
+  height: 0vh;
+  transition: 0.05s;
+  z-index: 998;
+  visibility: hidden;
 }
 
 .nav {
   height: 30vh;
-
   flex-direction: column;
   display: flex;
   justify-content: space-around;
 }
 
-.active, .wrapper button:hover {
+.navopen {
+  display: none;
+}
+
+.active {
   color: #E76060;
   transform: translateX(3px);
   transition: 0.25s;
@@ -37,16 +51,57 @@ button {
   border: none;
   color: #1EA5AD;
   font-family: Lato;
-  font-size: 2vh;
+  font-size: calc(12px + 0.5vw);
   width: fit-content;
 }
 
-
-@media only screen and (max-width: 750px){
+.hide {
+  display: none;
 }
 
-@media only screen and (max-width: 550px){
+.socials {
+  display: flex;
+  justify-content: space-around;
+  margin: 10%;
+  height: 10vh;
+}
+
+.socials img {
+  max-width: 20px;
+}
+
+@media (hover:hover) {
+  .wrapper button:hover {
+    color: #E76060;
+    transform: translateX(3px);
+    transition: 0.25s;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 550px) {
   .wrapper {
     display: none;
+  }
+  .mobilewrapper {
+    display: block;
+    height: 30vh;
+  }
+  .active {
+    transform: none;
+  }
+  button {
+    width: 100%;
+    text-align: center;
+  }
+  .navopen {
+    display: block;
+    margin: 5%;
+    position: fixed;
+    max-width: 40px;
+    z-index: 999;
+    filter: drop-shadow(0px 0px 10px #ffFCF4) drop-shadow(0px 0px 10px #ffFCF4) drop-shadow(0px 0px 10px #ffFCF4);
   }
 }
