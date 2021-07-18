@@ -2,7 +2,7 @@
   width: 12%;
   height: 100%;
   margin-left: 12%;
-  position: absolute;
+  position: fixed;
 
   display: flex;
   flex-direction: column;
@@ -18,6 +18,28 @@
   display: flex;
   justify-content: space-around;
 }
+
+.active, .wrapper button:hover {
+  color: #E76060;
+  transform: translateX(3px);
+  transition: 0.25s;
+  font-weight: 700;
+}
+
+.inactive {
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+
+button {
+  text-align: left;
+  background: none;
+  border: none;
+  color: #1EA5AD;
+  font-family: Lato;
+  font-size: 15pt;
+}
+
 
 @media only screen and (max-width: 750px){
 }
