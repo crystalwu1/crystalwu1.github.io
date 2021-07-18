@@ -35,10 +35,14 @@ export default () => {
           <div className={styles.flexrow}>
             <img src={profile} />
             <div className={styles.profiletext}>
-              <p>Hello! I'm a senior at Cornell University studying Computer Science. I'm originally from East Fishkill, NY, home to many <a href={'https://www.hopewelldepotmuseum.org/'} target="_blank">old railroad tracks.</a> </p>
-              <p>background in design and visual art. combine with coding to create user-centered products</p>
-              <p>passion for teaching</p>
-              <p>Hobbies, thrifting, movies, most recently discovered printmaking</p>
+              <p> Hello! I'm a senior at Cornell University studying Computer Science. I'm originally from Hopewell Jct, NY, home to a <a href={'https://www.hopewelldepotmuseum.org/depot-videos/'} target="_blank">very cute train depot.</a> </p>
+              {/* <p> My background in product design and visual art supplements my programming ability and helps me keep a strong focus on a user's needs. </p> */}
+              <p> Aside from programming, I have a passion for teaching. In the past, I've worked with <a href={'https://www.idtech.com/'} target="_blank">iD Tech</a>, <a href={'https://codeconnects.org/'} target="_blank">The Coding School</a>, and <a href={'https://coders.capitalone.com/'} target="_blank">Capital One Coders</a> to help kids discover a passion for coding. </p>
+              <p> I love thrifting, watching movies, and creating Spotify playlists.
+                Lately, I've been learning about printmaking techniques and looking at <a href={'https://collection.corita.org/page/6/descending/serigraph/1967'} target="_blank">Sister Mary Corita Kent</a>'s activist screenprints!</p>
+              <div className={styles.arrowWrapper}>
+                <i onClick={() => window.scrollTo(0, window.innerHeight)} className={styles.arrow}></i>
+              </div>
             </div>
           </div>
 

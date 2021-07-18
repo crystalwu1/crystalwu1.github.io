@@ -35,6 +35,11 @@
   margin-block-start: 0em;
 }
 
+a{
+  color: black;
+  text-decoration: underline;
+}
+
 .blue {
   color: #1EA5AD
 }
@@ -55,6 +60,28 @@
   padding-bottom: 2%;
 }
 
+.arrow {
+  border: solid #1EA5AD;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+
+}
+
+.arrowWrapper {
+  margin: 20%;
+  margin-left: 45%;
+}
+
+.arrowWrapper:hover{
+  opacity: .75;
+  transform: translateY(3px);
+  transition: 0.25s;
+}
+
 .tags {
   font-weight: lighter;
   font-size: 1.2vw;
@@ -67,15 +94,9 @@
   justify-content: space-between;
 }
 
-
-a {
-  text-decoration: none;
-  color: #1EA5AD;
-  
-}
-
 a:hover {
   color: #E76060;
+  transition: 0.25s;
 }
 
 .textbox {
