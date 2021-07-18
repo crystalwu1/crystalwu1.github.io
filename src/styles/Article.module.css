@@ -1,44 +1,30 @@
-.articlewrapper h1{
-  font-size: 30pt;
-  font-weight: bold;
-  padding-left: 0%;
-  margin-block-end: 3%;
-  font-family: 'Lato';
-
-}
-
 .articlewrapper {
-  width: 65%;
   margin-bottom: 10em;
-
+  width: 90%;
 }
 
 .articlewrapper h1{
   font-size: 30pt;
-  font-weight: bold;
-  padding-left: 0%;
-  margin-block-end: 3%;
-  font-family: 'Lato';
-
-}
-
-.articlewrapper p{
-  font-size: 15pt;
-  font-family: 'Lato';
-
+  margin-block-start: 2em;
 }
 
 .articleimage{
-  position: relative;
   width: 84%;
-  height: auto;
-  align-self: center;
   margin-top: 20px;
   margin-left: 8%;
 }
 
+.smallimage{
+  width: 60%;
+  padding-left: 20%;
+}
+
 .articlewrapper iframe{
+  height: 50vh;
   width: 80%;
+  margin-left: 10%;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
 }
 
 .gallery {
@@ -61,18 +47,10 @@
   position: relative;
 }
 
-.caption{
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
 .caption p{
   text-align: center;
   font-style: italic;
   font-size: 12pt;
-}
 
-ul {
-  font-size: 15pt;
-  font-family: Lato;
+  margin-block-end: 5em;
 }
