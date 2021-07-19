@@ -11,6 +11,13 @@ import cusailcover from '../images/cusailcover.svg'
 import netflixcover from '../images/netflixcover.svg'
 import blank from '../images/blank.png'
 
+import ddwgif from '../images/ddw.gif'
+import tetrisgif from '../images/tetris.gif'
+import cusailgif from '../images/cusail.gif'
+import balchgif from '../images/balch.gif'
+import ifgif from '../images/if.gif'
+import cornellgif from '../images/cornell.gif'
+
 function changeCover(c, cover) {
   if (c != 0) {
     document.getElementById(cover).setAttribute('style', 'visibility: visible; opacity: 1')
@@ -87,23 +94,23 @@ export default () => {
               <p>Leads a team of 30 undergraduates to design and build a fully autonomous robotic sailboat. Previously Business and Operations Lead.</p>
             </div>
             <div className={styles.job}>
-              <a href={'http://www.apogamma.org/'} target="_blank" className={gradientcss.apo} onMouseEnter={() => changeCover(1, "apo")} onMouseLeave={() => changeCover(0, "apo")}>Alpha Phi Omega</a>
-              <span className={styles.description}>Webmaster</span>
-            </div>
-            <div className={styles.job}>
               <a href={'https://github.com/crystalwu1/tetris'} target="_blank" className={gradientcss.balch} onMouseEnter={() => changeCover(1, "balch")} onMouseLeave={() => changeCover(0, "balch")}>Balch Hall</a>
               <span className={styles.description}>Resident Advisor</span>
             </div>
             <div className={styles.job}>
-              <a href={'https://github.com/crystalwu1/tetris'} target="_blank" onMouseEnter={() => changeCover(1, "3300")} onMouseLeave={() => changeCover(0, "3300")}>CS3300</a>
+              <span class={styles.nonlinkjob} onMouseEnter={() => changeCover(1, "apo")} onMouseLeave={() => changeCover(0, "apo")}>Alpha Phi Omega</span>
+              <span className={styles.description}>Webmaster</span>
+            </div>
+            <div className={styles.job}>
+              <span class={styles.nonlinkjob} target="_blank" onMouseEnter={() => changeCover(1, "3300")} onMouseLeave={() => changeCover(0, "3300")}>CS3300</span>
               <span className={styles.description}>Teaching Assistant FA21 / Data-Driven Web Apps </span>
             </div>
             <div className={styles.job}>
-              <a href={'https://github.com/crystalwu1/tetris'} target="_blank" onMouseEnter={() => changeCover(1, "3110")} onMouseLeave={() => changeCover(0, "3110")}>CS3110</a>
+              <span class={styles.nonlinkjob} target="_blank" onMouseEnter={() => changeCover(1, "3110")} onMouseLeave={() => changeCover(0, "3110")}>CS3110</span>
               <span className={styles.description}>Consultant FA20 / Function Programming </span>
             </div>
             <div className={styles.job}>
-              <a href={'https://github.com/crystalwu1/tetris'} target="_blank" onMouseEnter={() => changeCover(1, "1110")} onMouseLeave={() => changeCover(0, "1110")}>CS1110</a>
+              <span class={styles.nonlinkjob} target="_blank" onMouseEnter={() => changeCover(1, "1110")} onMouseLeave={() => changeCover(0, "1110")}>CS1110</span>
               <span className={styles.description}>Consultant FA19 + SP20 / Intro to Computing in Python</span>
             </div>
           </div>
@@ -141,7 +148,7 @@ export default () => {
             <div className={styles.projects}>
               <h1 id="code" className={styles.lighter}>Code</h1>
               <div className={styles.job}>
-                <a href={'https://github.com/crystalwu1/tetris'} target="_blank" className={gradientcss.ddw} onMouseEnter={() => changeCover(1, "ddw")} onMouseLeave={() => changeCover(0, "ddw")}> Relative Employment betw. U.S. Counties</a >
+                <a href={'https://github.com/rachelyhan/info3300p2'} target="_blank" className={gradientcss.ddw} onMouseEnter={() => changeCover(1, "ddw")} onMouseLeave={() => changeCover(0, "ddw")}> Relative Employment betw. U.S. Counties</a >
                 <span className={styles.description}> SP21</span>
                 <p>Starting with a U.S. county of your choice, discover how it compares to the rest of the country in terms of employment rate, education, and income.</p>
               </div>
@@ -193,18 +200,18 @@ export default () => {
 
         <div className={styles.imagehover}>
           <img id='capone' src={blank} />
-          <img id='if' src={blank} />
+          <img id='if' src={ifgif} />
 
-          <img id='cornell' src={blank} />
-          <img id='cusail' src={blank} />
+          <img id='cornell' src={cornellgif} />
+          <img id='cusail' src={cusailgif} />
           <img id='apo' src={blank} />
-          <img id='balch' src={blank} />
+          <img id='balch' src={balchgif} />
           <img id='3300' src={blank} />
           <img id='3110' src={blank} />
           <img id='1110' src={blank} />
 
-          <img id='ddw' src={blank} />
-          <img id='tetris' src={blank} />
+          <img id='ddw' src={ddwgif} />
+          <img id='tetris' src={tetrisgif} />
 
           <img id='connect' src={connectcover} />
           <img id='cusailb' src={cusailcover} />
