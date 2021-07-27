@@ -16,6 +16,7 @@
 .wrapper a img {
   margin-left: 10%;
   max-width: 70px;
+  width: 5vmin;
 }
 
 a:hover {

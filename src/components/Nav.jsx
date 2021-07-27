@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from '../styles/Nav.module.css';
-import homecss from '../styles/Description.module.css'
 import { useState, useEffect } from 'react';
 
 function elementInView(elem) {
   const windowPos = window.scrollY + window.innerHeight / 2
   let top = document.getElementById(elem).offsetTop
-  if (elem == 'about') {
+  if (elem === 'about') {
     return windowPos < window.innerHeight
   }
   const bottom = top + document.getElementById(elem).offsetHeight

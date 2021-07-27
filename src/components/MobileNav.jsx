@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../styles/Nav.module.css';
-import homecss from '../styles/Description.module.css'
 import { useState, useEffect } from 'react';
 import logo from '../images/Logo.png';
 
@@ -18,6 +17,13 @@ export default ({ articleState, callback }) => {
   const [projects, setProjects] = useState(false);
 
   const [mobileNav, setmobileNav] = useState(false);
+
+  function toggleMobileNav() {
+    document.getElementById("mobileNav").setAttribute("style", mobileNav ? "height: 40vh; visibility:visible" : "height: 0vh; visibility: hidden")
+    document.getElementById("mobileNavMenu").setAttribute("style", mobileNav ? "display: flex" : "display: none");
+    document.getElementById("socials").setAttribute("style", mobileNav ? "display: flex; " : "display: none;")
+    setmobileNav(!mobileNav)
+  }
 
   useEffect(() => {
     window.addEventListener('load', () => {
@@ -40,7 +46,7 @@ export default ({ articleState, callback }) => {
   function elementInView(elem) {
     const windowPos = window.scrollY + window.innerHeight / 2
     let top = document.getElementById(elem).offsetTop
-    if (elem == 'about') {
+    if (elem === 'about') {
       return windowPos < window.innerHeight
     }
     const bottom = top + document.getElementById(elem).offsetHeight
@@ -60,12 +66,6 @@ export default ({ articleState, callback }) => {
     toggleMobileNav()
   }
 
-  function toggleMobileNav() {
-    document.getElementById("mobileNav").setAttribute("style", mobileNav ? "height: 40vh; visibility:visible" : "height: 0vh; visibility: hidden")
-    document.getElementById("mobileNavMenu").setAttribute("style", mobileNav ? "display: flex" : "display: none");
-    document.getElementById("socials").setAttribute("style", mobileNav ? "display: flex; " : "display: none;")
-    setmobileNav(!mobileNav)
-  }
   return (
 
     <div>
@@ -79,10 +79,10 @@ export default ({ articleState, callback }) => {
           <button onClick={() => { scrollToElem("projects") }} className={projects ? styles.active : styles.inactive}>Projects</button>
         </div>
         <div id={"socials"} className={styles.socials}>
-          <a href={'mailto:cw683@cornell.edu'} target='_blank' > <img src={mail} alt="email" /> </a>
-          <a href={'https://www.linkedin.com/in/crystal-wu-/'} target='_blank' > <img src={link} alt="linkedin" /> </a>
-          <a href={'https://drive.google.com/file/d/1SW-F8rvNLIQz7adWk4G4M7bjP5jk_yd4/view?usp=sharing'} target='_blank'> <img src={resume} alt="resume" /> </a>
-          <a href={'https://github.com/crystalwu1'} target='_blank'> <img src={github} alt="github" /> </a>
+          <a href={'mailto:cw683@cornell.edu'} target='_blank' rel="noopener noreferrer"> <img src={mail} alt="email" /> </a>
+          <a href={'https://www.linkedin.com/in/crystal-wu-/'} rel="noopener noreferrer" target='_blank' > <img src={link} alt="linkedin" /> </a>
+          <a href={'https://drive.google.com/file/d/1SW-F8rvNLIQz7adWk4G4M7bjP5jk_yd4/view?usp=sharing'} rel="noopener noreferrer" target='_blank'> <img src={resume} alt="resume" /> </a>
+          <a href={'https://github.com/crystalwu1'} rel="noopener noreferrer" target='_blank'> <img src={github} alt="github" /> </a>
         </div>
       </div >
       <img src={logo} onClick={() => { toggleMobileNav() }} className={styles.navopen} alt="logo" />
