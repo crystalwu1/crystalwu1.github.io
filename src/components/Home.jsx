@@ -17,6 +17,7 @@ import cusailgif from '../images/cusail.gif'
 import balchgif from '../images/balch.gif'
 import ifgif from '../images/if.gif'
 import cornellgif from '../images/cornell.gif'
+import caponegif from '../images/capone.gif'
 
 function changeCover(c, cover) {
   if (c !== 0) {
@@ -42,8 +43,7 @@ export default () => {
           <div className={styles.flexrow}>
             <img src={profile} alt="profile" />
             <div className={styles.profiletext}>
-              <p> Hello! I'm a senior at Cornell University studying Computer Science. I'm originally from Hopewell Jct, NY, proud home to a <a href={'https://www.hopewelldepotmuseum.org/depot-videos/'} target="_blank" rel="noopener noreferrer">very cute train depot.</a> </p>
-              {/* <p> My background in product design and visual art supplements my programming ability and helps me keep a strong focus on a user's needs. </p> */}
+              <p> Hello! I'm a recent Computer Science grad from Cornell University. I'm originally from Hopewell Jct, NY, proud home to a <a href={'https://www.hopewelldepotmuseum.org/depot-videos/'} target="_blank" rel="noopener noreferrer">very cute train depot.</a> </p>
               <p> Aside from programming, I have a passion for teaching. In the past, I've worked with <a href={'https://www.idtech.com/'} target="_blank" rel="noopener noreferrer">iD Tech</a>, <a href={'https://codeconnects.org/'} target="_blank" rel="noopener noreferrer">The Coding School</a>, and <a href={'https://coders.capitalone.com/'} target="_blank" rel="noopener noreferrer">Capital One Coders</a> to help kids discover a passion for coding. </p>
               <p> I love thrifting, watching movies, and creating Spotify playlists.
                 Lately, I've been learning about printmaking techniques and looking at <a href={'https://collection.corita.org/page/6/descending/serigraph/1967'} rel="noopener noreferrer" target="_blank">Sister Mary Corita Kent</a>'s activist screenprints!</p>
@@ -72,7 +72,24 @@ export default () => {
                 Capital One
               </a>
               <span className={styles.description}>SWE Intern / SU21</span>
-              <p> Worked with 3 other interns in an agile environment to design and develop a front-end for Focus Partner Portal, an internal document storage tool. </p>
+              <p> Worked with 3 other interns in an agile environment to design and develop a front-end for Focus Partner Portal, an internal document storage tool. 
+              <div className={styles.morelinks}>
+                <a href={'https://drive.google.com/file/d/1nKC7ldfMTAvV2VotNm6TI2DApU2AR_3E/view?usp=sharing'}
+                  target="_blank"
+                  className={styles.linkmore}
+                  rel="noopener noreferrer">
+                  Overview
+                </a>
+                <a href={'https://drive.google.com/file/d/10Y8Hc8L1H6rzcyWkDbfqXRbxXACfl3nS/view?usp=sharing'}
+                  target="_blank"
+                  // className={}
+                  rel="noopener noreferrer">
+                  Demo Video
+                </a>
+              </div>
+              </p>
+              
+              
             </div>
             <div className={styles.job}>
               <a href={'https://www.infinitefoods.com/'} target="_blank" rel="noopener noreferrer" className={gradientcss.infinitefoods} onMouseEnter={() => changeCover(1, "if")} onMouseLeave={() => changeCover(0, "if")}>Infinite Foods</a>
@@ -94,24 +111,24 @@ export default () => {
               <span className={styles.description}>Team Lead</span>
               <p>Leads a team of 30 undergraduates to design and build a fully autonomous robotic sailboat. Previously Business and Operations Lead.</p>
             </div>
-            <div className={styles.job}>
-              <a href={'https://cornell.campusgroups.com/blch/home/'} rel="noopener noreferrer" target="_blank" className={gradientcss.balch} onMouseEnter={() => changeCover(1, "balch")} onMouseLeave={() => changeCover(0, "balch")}>Balch Hall</a>
+            {/* <div className={styles.job}>
+              <a href={'https://cornell.campusgroups.com/tonimorrison/home/'} rel="noopener noreferrer" target="_blank" className={gradientcss.balch} onMouseEnter={() => changeCover(1, "balch")} onMouseLeave={() => changeCover(0, "balch")}>Toni Morrison Hall</a>
               <span className={styles.description}>Resident Advisor</span>
+            </div> */}
+            <div className={styles.job}>
+              <a href={'https://www.apogamma.org/'} rel="noopener noreferrer" target="_blank" className={gradientcss.apo} onMouseEnter={() => changeCover(1, "apo")} onMouseLeave={() => changeCover(0, "apo")}>Alpha Phi Omega</a>
+              <span className={styles.description}>Webmaster SP21</span>
             </div>
             <div className={styles.job}>
-              <span class={styles.nonlinkjob} onMouseEnter={() => changeCover(1, "apo")} onMouseLeave={() => changeCover(0, "apo")}>Alpha Phi Omega</span>
-              <span className={styles.description}>Webmaster</span>
-            </div>
-            <div className={styles.job}>
-              <span class={styles.nonlinkjob} target="_blank" onMouseEnter={() => changeCover(1, "3300")} onMouseLeave={() => changeCover(0, "3300")}>CS3300</span>
+              <a href={'https://jeffrz.com/info3300/'} rel="noopener noreferrer" target="_blank" className={gradientcss.netflix} onMouseEnter={() => changeCover(1, "3300")} onMouseLeave={() => changeCover(0, "3300")}>CS3300</a>
               <span className={styles.description}>Teaching Assistant FA21 / Data-Driven Web Apps </span>
             </div>
             <div className={styles.job}>
-              <span class={styles.nonlinkjob} target="_blank" onMouseEnter={() => changeCover(1, "3110")} onMouseLeave={() => changeCover(0, "3110")}>CS3110</span>
-              <span className={styles.description}>Consultant FA20 / Function Programming </span>
+              <a href={'https://www.cs.cornell.edu/courses/cs3110/2020sp/'} rel="noopener noreferrer" target="_blank" className={gradientcss.netflix} onMouseEnter={() => changeCover(1, "3110")} onMouseLeave={() => changeCover(0, "3110")}>CS3110</a>
+              <span className={styles.description}>Consultant FA20 / Functional Programming </span>
             </div>
             <div className={styles.job}>
-              <span class={styles.nonlinkjob} target="_blank" onMouseEnter={() => changeCover(1, "1110")} onMouseLeave={() => changeCover(0, "1110")}>CS1110</span>
+              <a href={'https://www.cs.cornell.edu/courses/cs1110/2019fa/'} rel="noopener noreferrer" target="_blank" className={gradientcss.netflix} onMouseEnter={() => changeCover(1, "1110")} onMouseLeave={() => changeCover(0, "1110")}>CS3110</a>
               <span className={styles.description}>Consultant FA19 + SP20 / Intro to Computing in Python</span>
             </div>
           </div>
@@ -132,7 +149,7 @@ export default () => {
                 <p> Node.js </p>
                 <p> Angular </p>
                 <p> Git </p>
-                <p> LaTeX </p>
+                <p> D3.js </p>
                 <p> Wordpress </p>
               </div>
               <div>
@@ -170,43 +187,43 @@ export default () => {
                 <span className={styles.description}>Branding, Web Design / FA18  - Present</span>
                 <p>Creating CUSail's current brand from the ground (water?) up.</p>
               </div>
-              <div className={styles.job}>
+              {/* <div className={styles.job}>
                 <a href={'https://medium.com/@crystalwu12340/netflix-concept-summaries-691418686198'} rel="noopener noreferrer" target="_blank" className={gradientcss.netflix} onMouseEnter={() => changeCover(1, "netflix")} onMouseLeave={() => changeCover(0, "netflix")}>Neflix: Digest</a>
                 <span className={styles.description}>UX Case Study / FA19</span>
                 <p>Created a concept to help users to understand the patterns in how they use Netflix. </p>
-              </div>
+              </div> */}
               <div className={styles.job}>
                 <a href={'/pryde-pioneer'} className={gradientcss.pioneer} rel="noopener noreferrer" onMouseEnter={() => changeCover(1, "pioneer")} onMouseLeave={() => changeCover(0, "pioneer")}>PRYDE Pioneer</a>
                 <span className={styles.description}>Mobile UX Design / FA19</span>
                 <p>A fresh redesign of a simple survey app.</p>
               </div>
 
-              <h1 id="art" className={styles.lighter}>Art</h1>
+              {/* <h1 id="art" className={styles.lighter}>Art</h1> */}
               {/* <div className={styles.job}>
                 <a target="_blank" onMouseEnter={() => changeCover(1, "print")} rel="noopener noreferrer" onMouseLeave={() => changeCover(0, "print")}>Printmaking</a>
                 <span className={styles.description}>SP21</span>
                 <p>Screenprinting, intaglio etching, and photolithography.</p>
               </div> */}
-              <div className={styles.job}>
+              {/* <div className={styles.job}>
                 <a href={'https://vsco.co/crystalwudesign/gallery'} target="_blank" rel="noopener noreferrer" onMouseEnter={() => changeCover(1, "design")} onMouseLeave={() => changeCover(0, "design")}>Graphics</a>
                 <span className={styles.description}>FA17 - Present</span>
               </div>
               <div className={styles.job}>
                 <a href={'https://vsco.co/wuwuhoo/gallery'} target="_blank" rel="noopener noreferrer" onMouseEnter={() => changeCover(1, "photo")} onMouseLeave={() => changeCover(0, "photo")}>Photo</a>
                 <span className={styles.description}>FA13 - Present</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div >
 
         <div className={styles.imagehover}>
-          <img id='capone' src={blank} alt="capital one" />
+          <img id='capone' src={caponegif} alt="capital one" />
           <img id='if' src={ifgif} alt="infinite foods" />
 
           <img id='cornell' src={cornellgif} alt="cornell" />
           <img id='cusail' src={cusailgif} alt="cusail at the lake" />
           <img id='apo' src={blank} alt="alpha phi omega" />
-          <img id='balch' src={balchgif} alt="balch hall" />
+          {/* <img id='balch' src={balchgif} alt="balch hall" /> */}
           <img id='3300' src={blank} alt="cs3300" />
           <img id='3110' src={blank} alt="cs3110" />
           <img id='1110' src={blank} alt="cs1110" />
@@ -216,12 +233,12 @@ export default () => {
 
           <img id='connect' src={connectcover} alt="pryde connect" />
           <img id='cusailb' src={cusailcover} alt="cusail design" />
-          <img id='netflix' src={netflixcover} alt="netflix case study" />
+          {/* <img id='netflix' src={netflixcover} alt="netflix case study" /> */}
           <img id='pioneer' src={pioneercover} alt="pryde pioneer" />
 
-          <img id='print' src={blank} alt="printmaking" />
+          {/* <img id='print' src={blank} alt="printmaking" />
           <img id='design' src={designcover} alt="graphics" />
-          <img id='photo' src={photocover} alt="photography" />
+          <img id='photo' src={photocover} alt="photography" /> */}
         </div>
       </div>
 

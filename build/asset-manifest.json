@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.26b83353.chunk.css",
-    "main.js": "/static/js/main.d8211928.chunk.js",
-    "main.js.map": "/static/js/main.d8211928.chunk.js.map",
+    "main.css": "/static/css/main.26cec265.chunk.css",
+    "main.js": "/static/js/main.db2347a5.chunk.js",
+    "main.js.map": "/static/js/main.db2347a5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.88373d23.js",
     "runtime-main.js.map": "/static/js/runtime-main.88373d23.js.map",
     "static/css/2.674c27c3.chunk.css": "/static/css/2.674c27c3.chunk.css",
-    "static/js/2.84ca321f.chunk.js": "/static/js/2.84ca321f.chunk.js",
-    "static/js/2.84ca321f.chunk.js.map": "/static/js/2.84ca321f.chunk.js.map",
+    "static/js/2.b9991249.chunk.js": "/static/js/2.b9991249.chunk.js",
+    "static/js/2.b9991249.chunk.js.map": "/static/js/2.b9991249.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.674c27c3.chunk.css.map": "/static/css/2.674c27c3.chunk.css.map",
-    "static/css/main.26b83353.chunk.css.map": "/static/css/main.26b83353.chunk.css.map",
-    "static/js/2.84ca321f.chunk.js.LICENSE.txt": "/static/js/2.84ca321f.chunk.js.LICENSE.txt",
+    "static/css/main.26cec265.chunk.css.map": "/static/css/main.26cec265.chunk.css.map",
+    "static/js/2.b9991249.chunk.js.LICENSE.txt": "/static/js/2.b9991249.chunk.js.LICENSE.txt",
     "static/media/CRYSTAL.8847cb79.svg": "/static/media/CRYSTAL.8847cb79.svg",
     "static/media/actionicons.a5842fb1.png": "/static/media/actionicons.a5842fb1.png",
     "static/media/balch.f0ae3769.gif": "/static/media/balch.f0ae3769.gif",
     "static/media/bops.c756548b.jpg": "/static/media/bops.c756548b.jpg",
     "static/media/brainstorming.28e883b7.png": "/static/media/brainstorming.28e883b7.png",
+    "static/media/capone.3618c229.gif": "/static/media/capone.3618c229.gif",
     "static/media/connectcover.62ffaa18.svg": "/static/media/connectcover.62ffaa18.svg",
     "static/media/cornell.662afe9f.gif": "/static/media/cornell.662afe9f.gif",
     "static/media/cusail.60f7bd54.gif": "/static/media/cusail.60f7bd54.gif",
@@ -52,8 +53,8 @@
   "entrypoints": [
     "static/js/runtime-main.88373d23.js",
     "static/css/2.674c27c3.chunk.css",
-    "static/js/2.84ca321f.chunk.js",
-    "static/css/main.26b83353.chunk.css",
-    "static/js/main.d8211928.chunk.js"
+    "static/js/2.b9991249.chunk.js",
+    "static/css/main.26cec265.chunk.css",
+    "static/js/main.db2347a5.chunk.js"
   ]
 }

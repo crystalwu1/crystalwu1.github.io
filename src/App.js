@@ -1,6 +1,9 @@
 import React from 'react';
 import Title from './components/Title'
 import Nav from './components/Nav'
+import PageNav from './components/PageNav';
+import MobilePageNav from './components/MobilePageNav';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,8 +24,18 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></meta>
       </Helmet>
       <Title />
-      <Nav />
-      <MobileNav />
+      <Router basename={`${process.env.PUBLIC_URL}/`}>
+        <Switch>
+          <Route path="/" exact component={Nav} />
+          <Route path="" component={PageNav} />
+        </Switch>
+      </Router>
+      <Router basename={`${process.env.PUBLIC_URL}/`}>
+        <Switch>
+          <Route path="/" exact component={MobileNav} />
+          <Route path="" component={MobilePageNav} />
+        </Switch>
+      </Router>
       <Router basename={`${process.env.PUBLIC_URL}/`}>
         <Switch>
           <Route path="/" exact component={Home} />
